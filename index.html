@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>희구소 : Hidden Luck Lab</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gowun+Myeongjo&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              beige: {
+                50: '#FFFDF9',
+                100: '#FFF9F0', // Base BG
+                200: '#F5E6D3',
+              },
+              mint: {
+                DEFAULT: '#B0E0D5',
+                dark: '#6FCFBD',
+                light: '#D8F2EC'
+              },
+              peach: {
+                DEFAULT: '#FFB086',
+                light: '#FFDBC9'
+              },
+              gold: {
+                DEFAULT: '#D4AF37',
+                matte: '#C5A028'
+              },
+              dark: {
+                DEFAULT: '#333333',
+                soft: '#555555'
+              }
+            },
+            fontFamily: {
+              serif: ['"Gowun Myeongjo"', 'serif'],
+              sans: ['"Noto Sans KR"', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Glassmorphism utilities */
+      .glass {
+        background: rgba(255, 255, 255, 0.6);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.6);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+      }
+      .glass-dark {
+        background: rgba(0, 0, 0, 0.05);
+        backdrop-filter: blur(5px);
+      }
+      .text-balance {
+        text-wrap: balance;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.561.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-beige-100 text-dark font-sans antialiased selection:bg-mint selection:text-white">
+    <div id="root"></div>
+  </body>
+</html>
